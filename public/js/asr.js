@@ -16,9 +16,8 @@ function restore(){
 }
 
 $(document).ready(function(){
-  $("#record").on("mousedown",function(){
-    console.log("ASR REC START");
-    //setLoder();
+  $("#record").on("touchstart",function(){
+    console.log("ASR REC START");    
     $("#record").addClass("base64");
     Fr.voice.record($("#live").is(":checked"), function(){
       makeWaveform();
